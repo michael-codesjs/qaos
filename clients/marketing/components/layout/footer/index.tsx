@@ -120,7 +120,7 @@ export default function Footer() {
                 <a href="#" className="hover:text-white transition-colors flex items-center gap-2">
                   Careers{' '}
                   <span className="text-[9px] bg-gray-800 text-gray-300 px-1.5 py-0.5 rounded border border-gray-700 font-bold tracking-wider">
-                    WE'RE HIRING
+                    WE&apos;RE HIRING
                   </span>
                 </a>
               </li>

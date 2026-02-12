@@ -1,30 +1,34 @@
-import React from "react";
-import { Eye, Flash, DirectNotification, ShieldTick } from "iconsax-react";
+import React from 'react';
+import { Eye, Flash, DirectNotification, ShieldTick } from 'iconsax-react';
 
 const FEATURES = [
   {
-    title: "Visual Integrity",
-    description: "Every pixel is scrutinized. We detect layout shifts and visual bugs that code-based tests overloook.",
+    title: 'Visual Integrity',
+    description:
+      'Every pixel is scrutinized. We detect layout shifts and visual bugs that code-based tests overlook.',
     icon: Eye,
-    color: "text-oracle",
+    color: 'text-oracle',
   },
   {
-    title: "Massive Parallelism",
-    description: "Run thousands of complex user journeys simultaneously. Get feedback in seconds, not hours.",
+    title: 'Massive Parallelism',
+    description:
+      'Run thousands of complex user journeys simultaneously. Get feedback in seconds, not hours.',
     icon: Flash,
-    color: "text-sonic",
+    color: 'text-sonic',
   },
   {
-    title: "Intent-Based Logic",
-    description: "Our agents understand the 'why' behind actions, making tests resilient to UI changes.",
+    title: 'Intent-Based Logic',
+    description:
+      'Our agents understand the &apos;why&apos; behind actions, making tests resilient to UI changes.',
     icon: DirectNotification,
-    color: "text-strategist",
+    color: 'text-strategist',
   },
   {
-    title: "Zero Maintenance",
-    description: "No more fragile selectors. When your UI changes, Qaos adapts its navigation automatically.",
+    title: 'Zero Maintenance',
+    description:
+      'No more fragile selectors. When your UI changes, Qaos adapts its navigation automatically.',
     icon: ShieldTick,
-    color: "text-navigator",
+    color: 'text-navigator',
   },
 ];
 
@@ -39,11 +43,11 @@ export default function Features() {
               <span className="text-gray-400">Built for Scale.</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-md">
-              Qaos is engineered to handle the complexity of modern enterprise 
-              applications without the overhead of traditional QA.
+              Qaos is engineered to handle the complexity of modern enterprise applications without
+              the overhead of traditional QA.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {FEATURES.map((feature) => (
               <div key={feature.title} className="group">
@@ -51,9 +55,7 @@ export default function Features() {
                   <feature.icon size="32" variant="Bulk" color="currentColor" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {feature.description}
-                </p>
+                <p className="text-gray-500 text-sm leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>

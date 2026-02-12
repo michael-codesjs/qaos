@@ -102,8 +102,8 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-xl md:text-2xl font-medium text-foreground mb-8 leading-relaxed italic">
-              "Qaos found edge cases in our checkout flow that our manual testers hadn't uncovered
-              in months."
+              &quot;Qaos found edge cases in our checkout flow that our manual testers hadn&apos;t
+              uncovered in months.&quot;
             </h3>
             <div className="flex flex-col items-center">
               <p className="font-bold text-sm text-foreground uppercase tracking-wider">

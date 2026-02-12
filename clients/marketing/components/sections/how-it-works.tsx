@@ -32,7 +32,7 @@ export default function HowItWorks() {
               <span className="text-navigator">Uncovers Truth</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-sm">
-              We've replaced brittle selectors and fragile scripts with a generative brain that
+              We&apos;ve replaced brittle selectors and fragile scripts with a generative brain that
               understands user intent.
             </p>
           </div>
