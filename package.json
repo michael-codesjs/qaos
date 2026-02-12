@@ -18,9 +18,9 @@
   },
   "packageManager": "yarn@1.22.22",
   "workspaces": [
-    "clients/*",
-    "services/*",
-    "shared/*",
-    "infrastructure/*"
+    "clients/**",
+    "services/**",
+    "shared/**",
+    "infrastructure/**"
   ]
 }
