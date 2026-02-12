@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  /* Qaos / Amplemarket Palette */
+  --background: #F6F5F3; /* Off-white/Beige */
+  --foreground: #111111; /* Near Black */
+  
+  /* Agent Colors */
+  --color-strategist: #328EFA; /* Blue */
+  --color-navigator: #E16540; /* Orange */
+  --color-sonic: #FBC768;     /* Yellow */
+  --color-oracle: #47D096;    /* Green */
+
+  /* Glows */
+  --color-logic-glow: #D0B2FF;
+  --color-action-glow: #FFEED8;
+  --color-vision-glow: #99FFF9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-strategist: var(--color-strategist);
+  --color-navigator: var(--color-navigator);
+  --color-sonic: var(--color-sonic);
+  --color-oracle: var(--color-oracle);
+  
+  --color-logic-glow: var(--color-logic-glow);
+  --color-action-glow: var(--color-action-glow);
+  --color-vision-glow: var(--color-vision-glow);
+  
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
