@@ -30,11 +30,13 @@ This is a monorepo managed with **TurboRepo**.
 ```text
 qaos/
 ├── clients/
-│   └── marketing/      # Next.js 15 marketing site (built with Tailwind CSS 4)
+│   └── marketing/      # Next.js 15 site (Tailwind CSS 4)
+│       ├── (marketing) # Landing pages & public content
+│       └── (auth)      # Authentication flows
 ├── services/
-│   └── main/           # Core backend service (Node.js, Mastra, Mastra, Apollo/Nexus)
+│   └── main/           # Core backend service
 ├── docs/               # Evolution and technical documentation
-└── .agent/             # Custom agent workflows and instructions
+└── .agent/             # Custom agent workflows
 ```
 
 ## 💻 Getting Started

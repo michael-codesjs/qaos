@@ -59,17 +59,21 @@ export default function Header() {
 
         {/* Actions */}
         <div className="flex items-center gap-2 md:gap-4">
-          <Button variant="outline" size="sm" className="hidden sm:block">
-            Open app
-          </Button>
-          <Button
-            className={cn(
-              'text-[12px] md:text-[13px]',
-              scrolled ? 'h-9 md:h-10 px-4' : 'h-10 md:h-11 px-5',
-            )}
-          >
-            Get free trial
-          </Button>
+          <Link href="/login">
+            <Button variant="outline" size="sm" className="hidden sm:block">
+              Open app
+            </Button>
+          </Link>
+          <Link href="/signup">
+            <Button
+              className={cn(
+                'text-[12px] md:text-[13px]',
+                scrolled ? 'h-9 md:h-10 px-4' : 'h-10 md:h-11 px-5',
+              )}
+            >
+              Get free trial
+            </Button>
+          </Link>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -114,12 +118,16 @@ export default function Header() {
           </div>
 
           <section className="mt-auto pt-8 border-t border-gray-100 space-y-4">
-            <Button size="lg" className="w-full text-lg shadow-lg">
-              Get free trial
-            </Button>
-            <Button variant="ghost" size="lg" className="w-full text-lg">
-              Open app
-            </Button>
+            <Link href="/signup" className="w-full">
+              <Button size="lg" className="w-full text-lg shadow-lg">
+                Get free trial
+              </Button>
+            </Link>
+            <Link href="/login" className="w-full">
+              <Button variant="ghost" size="lg" className="w-full text-lg">
+                Open app
+              </Button>
+            </Link>
           </section>
         </div>
       </div>

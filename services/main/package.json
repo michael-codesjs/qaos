@@ -7,7 +7,7 @@
   "scripts": {
     "mastra:dev": "set -a && . ./.env && set +a && mastra dev",
     "mastra:build": "mastra build",
-    "predev": "lsof -i :5445 | grep LISTEN | awk '{print $2}' | xargs kill -9",
+    "predev": "lsof -i :6445 | grep LISTEN | awk '{print $2}' | xargs kill -9",
     "dev": "node --watch -r tsconfig-paths/register --import tsx src/index.ts",
     "prebuild": "rm -rf src/generated && rm -rf dist && yarn generate",
     "build": "tsc && mkdir -p dist/src/generated && cp -R src/generated/* dist/src/generated/ && tsc-alias",

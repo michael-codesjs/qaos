@@ -12,91 +12,99 @@ export const ResetPasswordEmailHtml = (url: string) => `
       font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f5;
-      color: #18181b;
+      background-color: #F6F5F3;
+      color: #111111;
       -webkit-font-smoothing: antialiased;
     }
     .wrapper {
       width: 100%;
-      background-color: #f4f4f5;
+      background-color: #F6F5F3;
       padding: 40px 0;
     }
     .container {
-      max-width: 600px;
+      max-width: 520px;
       margin: 0 auto;
-      background-color: #0A0A0A;
-      color: #ffffff;
-      border-radius: 16px;
+      background-color: #ffffff;
+      border-radius: 24px;
       overflow: hidden;
-      border: 1px solid #333333;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid #E5E5E5;
     }
     .header {
-      padding: 48px 40px 24px;
+      padding: 48px 40px 12px;
       text-align: center;
     }
     .logo {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 800;
-      color: #ffffff;
+      color: #111111;
       text-decoration: none;
-      letter-spacing: -0.5px;
+      letter-spacing: -1px;
     }
     .content {
-      padding: 24px 48px 48px;
+      padding: 24px 40px 48px;
       text-align: center;
     }
     .title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 16px;
-      color: #ffffff;
+      color: #111111;
       letter-spacing: -0.5px;
     }
     .text {
       font-size: 16px;
       line-height: 1.6;
-      color: #AAAAAA;
+      color: #5E5C5A;
       margin-bottom: 32px;
     }
     .button {
       display: inline-block;
-      background-color: #ffffff;
-      color: #000000;
+      background-color: #111111;
+      color: #ffffff !important;
       font-size: 16px;
       font-weight: 600;
       text-decoration: none;
-      padding: 16px 32px;
-      border-radius: 100px;
+      padding: 16px 36px;
+      border-radius: 12px;
       margin-bottom: 32px;
-      transition: opacity 0.2s ease;
+      transition: all 0.2s ease;
     }
     .button:hover {
       opacity: 0.9;
     }
     .footer {
       padding: 32px 40px;
-      background-color: #000000;
+      background-color: #ffffff;
       text-align: center;
-      border-top: 1px solid #1A1A1A;
+      border-top: 1px solid #F3F4F6;
     }
     .footer-text {
-      font-size: 14px;
-      color: #666666;
+      font-size: 12px;
+      color: #9CA3AF;
       margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .tagline {
+      font-size: 11px;
+      color: #E16540;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 16px;
     }
     .link-text {
-        color: #444444;
+        color: #9CA3AF;
         font-size: 12px;
         word-break: break-all;
-        margin-top: 24px;
+        margin-top: 32px;
         line-height: 1.5;
     }
     @media only screen and (max-width: 600px) {
       .container {
-        width: 100%;
-        border-radius: 0;
-        border: none;
+        width: 90%;
+        border-radius: 16px;
       }
       .content {
         padding: 24px;
@@ -112,18 +120,18 @@ export const ResetPasswordEmailHtml = (url: string) => `
       </div>
       <div class="content">
         <h1 class="title">Reset your password</h1>
-        <p class="text">We received a request to reset your password. Click the button below to choose a new one.</p>
+        <p class="text">We received a request to reset your password for your Qaos account. Click the button below to choose a new one.</p>
         <a href="${url}" class="button">Reset Password</a>
-        <p class="text" style="font-size: 14px; margin-bottom: 0;">If you didn't request this, you can safely ignore this email.</p>
+        <p class="text" style="font-size: 13px; margin-bottom: 0;">If you didn't request this, you can safely ignore this email.</p>
         
         <p class="link-text">
-          Button not working? Copy and paste this link into your browser:<br>
-          <a href="${url}" style="color: #666666; text-decoration: underline;">${url}</a>
+          Link not working? Copy and paste this into your browser:<br>
+          <a href="${url}" style="color: #E16540; text-decoration: underline;">${url}</a>
         </p>
       </div>
       <div class="footer">
-        <p class="footer-text">&copy; ${new Date().getFullYear()} qaos. All rights reserved.</p>
-        <p class="footer-text" style="font-size: 12px; color: #444444;">The ultimate co-pilot for the lifetime of your car.</p>
+        <p class="footer-text">&copy; ${new Date().getFullYear()} Qaos. All rights reserved.</p>
+        <div class="tagline">Testing with Intent, Not Just Scripts.</div>
       </div>
     </div>
   </div>

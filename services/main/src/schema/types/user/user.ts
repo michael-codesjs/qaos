@@ -14,14 +14,6 @@ export const User = objectType({
     t.field('profilePictureKey', UserNexus.profilePictureKey);
     t.field('createdAt', UserNexus.createdAt);
     t.field('updatedAt', UserNexus.updatedAt);
-    t.field(UserNexus.projects);
-    t.field(UserNexus.media);
-    // t.string('profilePictureComputed', {
-    //   resolve: async (root) => {
-    //     if (!root.profilePictureKey) return null;
-    //     return s3.getDownloadUrl(root.profilePictureKey);
-    //   },
-    // });
   },
 });
 

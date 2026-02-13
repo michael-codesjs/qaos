@@ -10,7 +10,6 @@ import express from 'express';
 import http from 'http';
 import morgan from 'morgan';
 import chatRouter from './routes/chat';
-import mediaWorker from './workers/media';
 
 export async function createServer() {
   const app = express();
@@ -51,9 +50,6 @@ export async function createServer() {
 
   // Chat endpoint (Mastra-triggered)
   app.use('/api/chat', chatRouter);
-
-  // Worker endpoints (QStash Webhooks)
-  app.use('/api/workers/media', mediaWorker);
 
   return { app, httpServer, server };
 }

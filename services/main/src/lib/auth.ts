@@ -14,7 +14,9 @@ export const auth = betterAuth({
   trustedOrigins: [
     'qaos://',
     'exp://',
-    'http://localhost:5556',
+    'http://localhost:6445',
+    'http://localhost:6446',
+    'http://localhost:6447',
     'https://tryqaos.com',
     'https://api.tryqaos.com',
     'https://www.tryqaos.com',

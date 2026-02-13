@@ -25,8 +25,6 @@ export const permissions = shield(
     Query: {
       '*': allow,
       me: isAuthenticated,
-      project: isAuthenticated,
-      projects: isAuthenticated,
     },
     Mutation: {
       '*': isAuthenticated,
